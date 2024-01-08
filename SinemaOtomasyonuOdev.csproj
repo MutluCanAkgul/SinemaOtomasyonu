@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{580C4BEC-9CEB-40BC-AC30-568AE6145BC3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SinemaOtomasyonuOdev</RootNamespace>
+    <AssemblyName>SinemaOtomasyonuOdev</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEkrani\adminBilgileri.cs" />
+    <Compile Include="AdminEkrani\AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkrani\AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEkrani\adminsayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkrani\adminsayfa.Designer.cs">
+      <DependentUpon>adminsayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEkrani\FilmGuncellemeEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkrani\FilmGuncellemeEkranı.Designer.cs">
+      <DependentUpon>FilmGuncellemeEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEkrani\FilmSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkrani\FilmSayfa.Designer.cs">
+      <DependentUpon>FilmSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEkrani\SalonEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkrani\SalonEkranı.Designer.cs">
+      <DependentUpon>SalonEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani\anasayfa.Designer.cs">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\bilet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani\bilet.Designer.cs">
+      <DependentUpon>bilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\Biletlerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani\Biletlerim.Designer.cs">
+      <DependentUpon>Biletlerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\BiletSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani\BiletSayfası.Designer.cs">
+      <DependentUpon>BiletSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\FilmDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani\FilmDetay.Designer.cs">
+      <DependentUpon>FilmDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\FilmListe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani\FilmListe.Designer.cs">
+      <DependentUpon>FilmListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\Giris_Yap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani\Giris_Yap.Designer.cs">
+      <DependentUpon>Giris_Yap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\Kayıt_Ol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani\Kayıt_Ol.Designer.cs">
+      <DependentUpon>Kayıt_Ol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani\kullaniciBilgileri.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinemaVeriDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinemaVeriDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VeritabaniIslemleri.cs" />
+    <EmbeddedResource Include="AdminEkrani\AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEkrani\adminsayfa.resx">
+      <DependentUpon>adminsayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEkrani\FilmGuncellemeEkranı.resx">
+      <DependentUpon>FilmGuncellemeEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEkrani\FilmSayfa.resx">
+      <DependentUpon>FilmSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEkrani\SalonEkranı.resx">
+      <DependentUpon>SalonEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani\anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani\bilet.resx">
+      <DependentUpon>bilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani\Biletlerim.resx">
+      <DependentUpon>Biletlerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani\BiletSayfası.resx">
+      <DependentUpon>BiletSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani\FilmDetay.resx">
+      <DependentUpon>FilmDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani\FilmListe.resx">
+      <DependentUpon>FilmListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani\Giris_Yap.resx">
+      <DependentUpon>Giris_Yap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani\Kayıt_Ol.resx">
+      <DependentUpon>Kayıt_Ol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SinemaVeriDataSet.xsc">
+      <DependentUpon>SinemaVeriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaVeriDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinemaVeriDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinemaVeriDataSet.xss">
+      <DependentUpon>SinemaVeriDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema-kapak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geridon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
